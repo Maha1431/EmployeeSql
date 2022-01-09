@@ -16,9 +16,9 @@ create table employee_payroll
 --UC3
 
 insert into employee_payroll values
-('Joe',100000.0,'2020-01-03'),
-('Finny',200000.0,'2019-10-13'),
-('Mabel',300000.0,'2021-09-18')
+('Maha',100000.0,'2020-01-03'),
+('shalini',200000.0,'2019-10-13'),
+('Raju',300000.0,'2021-09-18')
 
 --UC4
 
@@ -26,7 +26,7 @@ select * from employee_payroll
 
 --UC5
 
-select salary from employee_payroll where name = 'Joe'
+select salary from employee_payroll where name = 'Maha'
 
 select * from employee_payroll
 where start_date between cast('2019-01-01' As date) and GETDATE()
@@ -36,8 +36,8 @@ where start_date between cast('2019-01-01' As date) and GETDATE()
 ALTER TABLE employee_payroll
 ADD Gender char(2)
 
-update employee_payroll set Gender = 'M' where name = 'Joe' or name = 'Finny'
-update employee_payroll set Gender = 'F' where name = 'Mabel';
+update employee_payroll set Gender = 'F' where name = 'Maha' or name = 'Shalini'
+update employee_payroll set Gender = 'M' where name = 'Raju';
 
 select * from employee_payroll
 
