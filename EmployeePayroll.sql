@@ -65,7 +65,7 @@ select * from employee_payroll
 
 alter table employee_payroll add 
 phone varchar(13),
-department varchar(100) not null default 'CSE',
+department varchar(100) not null default 'IT',
 address varchar(250) not null default 'Bangalore'
 
 select * from employee_payroll
